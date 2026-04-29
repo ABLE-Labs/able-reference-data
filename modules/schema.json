@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Module",
+  "type": "object",
+  "required": ["key", "name", "type"],
+  "properties": {
+    "key": {
+      "type": "string",
+      "description": "Unique identifier (snake_case). e.g. temperature_module_v2",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable display name"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["temperature", "shaker", "magnet", "heater_shaker", "other"]
+    },
+    "deck_slots": {
+      "type": "array",
+      "items": { "type": "integer" },
+      "description": "Compatible deck slot positions"
+    },
+    "manufacturer": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

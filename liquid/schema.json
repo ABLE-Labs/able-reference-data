@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Liquid",
+  "type": "object",
+  "required": ["key", "name"],
+  "properties": {
+    "key": {
+      "type": "string",
+      "description": "Unique identifier (snake_case). e.g. pbs_1x",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable display name"
+    },
+    "color": {
+      "type": "string",
+      "description": "Hex color for UI display. e.g. #3B82F6",
+      "pattern": "^#[0-9A-Fa-f]{6}$"
+    },
+    "viscosity": {
+      "type": "string",
+      "enum": ["low", "medium", "high"],
+      "description": "Relative viscosity for pipetting parameters"
+    },
+    "density_g_ml": {
+      "type": "number",
+      "description": "Density in g/mL (water = 1.0)"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Labware",
+  "type": "object",
+  "required": ["key", "name", "category", "rows", "cols", "volume_ul"],
+  "properties": {
+    "key": {
+      "type": "string",
+      "description": "Unique identifier (snake_case). e.g. corning_96_wellplate_360ul_flat",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable display name"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["well_plate", "tip_rack", "reservoir", "tube_rack", "other"]
+    },
+    "rows": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "cols": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "volume_ul": {
+      "type": "number",
+      "description": "Max well volume in microliters"
+    },
+    "dead_volume_ul": {
+      "type": "number",
+      "description": "Dead volume per well in microliters"
+    },
+    "well_shape": {
+      "type": "string",
+      "enum": ["circular", "rectangular"]
+    },
+    "manufacturer": {
+      "type": "string"
+    },
+    "catalog_number": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
