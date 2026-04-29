@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Pipette",
+  "type": "object",
+  "required": ["key", "label", "spec"],
+  "properties": {
+    "key": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "label": { "type": "string" },
+    "spec": {
+      "type": "object",
+      "required": ["channel", "working_volume"],
+      "properties": {
+        "channel": { "type": "integer", "description": "Number of channels (e.g. 96)" },
+        "working_volume": { "type": "number", "description": "Max working volume (ul)" },
+        "hardware": { "type": "object", "description": "Hardware-specific parameters" }
+      }
+    }
+  },
+  "additionalProperties": false
+}

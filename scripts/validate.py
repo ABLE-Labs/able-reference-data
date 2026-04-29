@@ -10,7 +10,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
-COLLECTIONS = ["labware", "modules", "liquid"]
+COLLECTIONS = ["labware", "modules", "liquid", "pipettes"]
 
 
 def validate_collection(name: str) -> list[str]:
@@ -34,10 +34,13 @@ def validate_collection(name: str) -> list[str]:
         except jsonschema.ValidationError as e:
             errors.append(f"[{name}][{i}] {e.message}")
 
-        key = record.get("key", "")
-        if key in keys_seen:
-            errors.append(f"[{name}][{i}] Duplicate key: {key!r}")
-        keys_seen.add(key)
+        # liquid uses name as identifier, others use key
+        uid_field = "name" if name == "liquid" else "key"
+        uid = record.get(uid_field, "")
+        if uid and uid in keys_seen:
+            errors.append(f"[{name}][{i}] Duplicate {uid_field}: {uid!r}")
+        if uid:
+            keys_seen.add(uid)
 
     return errors
 

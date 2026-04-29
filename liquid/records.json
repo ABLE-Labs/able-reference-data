@@ -1,1 +1,170 @@
-[]
+[
+  {
+    "color": "#000000",
+    "name": "Distilled Water",
+    "parameter": {
+      "mix": {
+        "mixDelay": {
+          "aspirate": 3,
+          "dispense": 4
+        },
+        "mixSpeed": {
+          "aspirate": 1,
+          "dispense": 2
+        },
+        "pausePipette": {
+          "delay": 5,
+          "speed": 6
+        }
+      },
+      "transfer": {
+        "source": {
+          "aspirateSpeed": {
+            "flowRate": 1
+          },
+          "backlash": {
+            "value": 7
+          },
+          "pausePipette": {
+            "delay": 5,
+            "speed": 6
+          },
+          "preWetting": {
+            "count": 2,
+            "delay": 3,
+            "flowRate": 4
+          }
+        },
+        "target": {
+          "blowout": {
+            "flowRate": 20
+          },
+          "dispenseSpeed": {
+            "flowRate": 7
+          },
+          "pausePipette": {
+            "delay": 8,
+            "speed": 9
+          }
+        }
+      }
+    },
+    "verified": true
+  },
+  {
+    "color": "#699c98",
+    "name": "흙",
+    "parameter": {
+      "mix": {
+        "blowout": {
+          "flowRate": 7
+        },
+        "mixDelay": {
+          "aspirate": 3,
+          "dispense": 4
+        },
+        "mixSpeed": {
+          "aspirate": 1,
+          "dispense": 2
+        },
+        "pausePipette": {
+          "delay": 5,
+          "speed": 6
+        }
+      },
+      "transfer": {
+        "source": {
+          "aspirateSpeed": {
+            "flowRate": 1
+          },
+          "backlash": {
+            "value": 7
+          },
+          "pausePipette": {
+            "delay": 5,
+            "speed": 6
+          },
+          "preWetting": {
+            "count": 2,
+            "delay": 3,
+            "flowRate": 4
+          }
+        },
+        "target": {
+          "blowout": {
+            "flowRate": 20
+          },
+          "dispenseSpeed": {
+            "flowRate": 7
+          },
+          "pausePipette": {
+            "delay": 8,
+            "speed": 9
+          }
+        }
+      }
+    },
+    "verified": false
+  },
+  {
+    "color": "#a99e41",
+    "name": "토",
+    "parameter": {
+      "mix": {
+        "blowout": {
+          "flowRate": 3
+        },
+        "mixDelay": {
+          "aspirate": 3,
+          "dispense": 3
+        },
+        "mixSpeed": {
+          "aspirate": 3,
+          "dispense": 3
+        },
+        "pausePipette": {
+          "delay": 3,
+          "speed": 3
+        }
+      },
+      "transfer": {
+        "source": {
+          "aspirateSpeed": {
+            "flowRate": 1
+          },
+          "backlash": {
+            "value": 6
+          },
+          "pausePipette": {
+            "delay": 1,
+            "speed": 1
+          },
+          "preWetting": {
+            "count": 1,
+            "delay": 1,
+            "flowRate": 1
+          }
+        },
+        "target": {
+          "blowout": {
+            "flowRate": 1
+          },
+          "dispenseSpeed": {
+            "flowRate": 1
+          },
+          "pausePipette": {
+            "delay": 1,
+            "speed": 1
+          }
+        }
+      }
+    },
+    "verified": false
+  },
+  {
+    "color": "",
+    "name": "NONE",
+    "parameter": {},
+    "verified": false
+  }
+]

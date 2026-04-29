@@ -2,50 +2,55 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Labware",
   "type": "object",
-  "required": ["key", "name", "category", "rows", "cols", "volume_ul"],
+  "required": ["key", "product_name", "category", "row_count", "column_count", "well_count", "spec"],
   "properties": {
     "key": {
       "type": "string",
-      "description": "Unique identifier (snake_case). e.g. corning_96_wellplate_360ul_flat",
-      "pattern": "^[a-z0-9_]+$"
+      "description": "Unique identifier"
     },
-    "name": {
-      "type": "string",
-      "description": "Human-readable display name"
-    },
+    "product_name": { "type": "string" },
     "category": {
       "type": "string",
-      "enum": ["well_plate", "tip_rack", "reservoir", "tube_rack", "other"]
+      "description": "e.g. Tip Box, Well Plate, Reservoir, Tube Rack"
     },
-    "rows": {
-      "type": "integer",
-      "minimum": 1
+    "category_number": { "type": "string" },
+    "company": { "type": "string" },
+    "well_count": { "type": "integer", "minimum": 1 },
+    "row_count": { "type": "integer", "minimum": 1 },
+    "column_count": { "type": "integer", "minimum": 1 },
+    "shape_well": { "type": "string", "description": "e.g. Circle, Square" },
+    "shape_bottom": { "type": "string", "description": "e.g. U, V, F" },
+    "spec": {
+      "type": ["object", "null"],
+      "required": ["well_count", "row_count", "column_count", "offset_x", "offset_y", "space_x", "space_y", "height", "depth"],
+      "properties": {
+        "well_count": { "type": "integer" },
+        "row_count": { "type": "integer" },
+        "column_count": { "type": "integer" },
+        "offset_x": { "type": "number", "description": "First well X position (mm)" },
+        "offset_y": { "type": "number", "description": "First well Y position (mm)" },
+        "space_x": { "type": "number", "description": "Well spacing X (mm)" },
+        "space_y": { "type": "number", "description": "Well spacing Y (mm)" },
+        "height": { "type": "number", "description": "Labware total height (mm)" },
+        "depth": { "type": "number", "description": "Well depth (mm)" },
+        "volume_ul": { "type": "number", "description": "Max well volume (ul)" },
+        "tip_info": {
+          "type": "object",
+          "properties": {
+            "volume": { "type": "number" },
+            "length": { "type": "number" },
+            "overlap": { "type": "number" }
+          }
+        }
+      }
     },
-    "cols": {
-      "type": "integer",
-      "minimum": 1
-    },
-    "volume_ul": {
-      "type": "number",
-      "description": "Max well volume in microliters"
-    },
-    "dead_volume_ul": {
-      "type": "number",
-      "description": "Dead volume per well in microliters"
-    },
-    "well_shape": {
-      "type": "string",
-      "enum": ["circular", "rectangular"]
-    },
-    "manufacturer": {
-      "type": "string"
-    },
-    "catalog_number": {
-      "type": "string"
-    },
-    "notes": {
-      "type": "string"
-    }
+    "show": { "type": "boolean", "default": true },
+    "verified_ablelabs": { "type": "boolean", "default": false },
+    "verified_user": { "type": "boolean", "default": false },
+    "custom_drawing": { "type": "boolean", "default": false },
+    "drawing": { "type": "string", "description": "SVG filename (PocketBase file reference)" },
+    "image": { "type": "string" },
+    "web_link": { "type": "string" }
   },
   "additionalProperties": false
 }

@@ -1,0 +1,105 @@
+[
+  {
+    "key": "96ch_200ul",
+    "label": "96ch",
+    "spec": {
+      "channel": 96,
+      "working_volume": 200.0,
+      "hardware": {
+        "pulse_per_unit": 1414.71
+      },
+      "tip_configs": {
+        "200": {
+          "pick_up_tip_extra_depth": [
+            1.0,
+            1.5
+          ],
+          "volume": {
+            "max": 415.0,
+            "ready": -252.0,
+            "drop_tip": -35.0,
+            "blow_out": 5,
+            "backlash": 10
+          },
+          "flow_rate": {
+            "max": 500.0,
+            "default": 100.0,
+            "ready": 5,
+            "drop_tip": 100.0,
+            "blow_out": 10.0
+          },
+          "calibration": {
+            "forward": {
+              "default": {
+                "a": 1.0,
+                "b": 0.0
+              }
+            },
+            "reverse": {
+              "default": {
+                "a": 1.0,
+                "b": 0.0,
+                "extra_percent": 2.2,
+                "extra_each_volume": 5
+              }
+            }
+          }
+        },
+        "50": {
+          "pick_up_tip_extra_depth": [
+            0.5,
+            1.0
+          ],
+          "volume": {
+            "max": 150.0,
+            "ready": -252.0,
+            "drop_tip": -35.0,
+            "blow_out": 5,
+            "backlash": 10
+          },
+          "flow_rate": {
+            "max": 200.0,
+            "default": 50.0,
+            "ready": 5,
+            "drop_tip": 500.0,
+            "blow_out": 10.0
+          },
+          "calibration": {
+            "forward": {
+              "default": {
+                "a": 1.0,
+                "b": 0.0
+              },
+              "small": {
+                "volume_range": [
+                  0,
+                  2.0
+                ],
+                "a": 1.0,
+                "b": 0.0
+              }
+            },
+            "reverse": {
+              "default": {
+                "a": 1.0,
+                "b": 0.0,
+                "extra_percent": 50,
+                "extra_each_volume": 0.3
+              },
+              "small": {
+                "volume_range": [
+                  0,
+                  2.0
+                ],
+                "a": 1.0,
+                "b": 0.0,
+                "extra_percent": 50,
+                "extra_each_volume": 0.3
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]

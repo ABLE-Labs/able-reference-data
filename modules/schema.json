@@ -2,32 +2,28 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Module",
   "type": "object",
-  "required": ["key", "name", "type"],
+  "required": ["key", "product_name", "type", "spec"],
   "properties": {
     "key": {
-      "type": "string",
-      "description": "Unique identifier (snake_case). e.g. temperature_module_v2",
-      "pattern": "^[a-z0-9_]+$"
-    },
-    "name": {
-      "type": "string",
-      "description": "Human-readable display name"
-    },
-    "type": {
-      "type": "string",
-      "enum": ["temperature", "shaker", "magnet", "heater_shaker", "other"]
-    },
-    "deck_slots": {
-      "type": "array",
-      "items": { "type": "integer" },
-      "description": "Compatible deck slot positions"
-    },
-    "manufacturer": {
       "type": "string"
     },
-    "notes": {
-      "type": "string"
-    }
+    "product_name": { "type": "string" },
+    "type": { "type": "string", "description": "e.g. magnetic_shaker, coldplate, heater_shaker" },
+    "adapter_name": { "type": "string" },
+    "order_id": { "type": "integer", "description": "Display order in UI" },
+    "is_available": { "type": "boolean", "default": true },
+    "is_required_adapter": { "type": "boolean", "default": false },
+    "spec": {
+      "type": ["object", "null"],
+      "required": ["offset_x", "offset_y", "offset_z"],
+      "properties": {
+        "offset_x": { "type": "number", "description": "X offset from deck slot (mm)" },
+        "offset_y": { "type": "number", "description": "Y offset from deck slot (mm)" },
+        "offset_z": { "type": "number", "description": "Z height of module top surface (mm)" }
+      }
+    },
+    "drawing": { "type": "string", "description": "Image filename (PocketBase file reference)" },
+    "image": { "type": "string" }
   },
   "additionalProperties": false
 }
