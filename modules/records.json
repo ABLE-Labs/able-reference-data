@@ -1,8 +1,8 @@
 [
   {
     "adapter_name": "",
-    "drawing": "gje74v35aj_sr016uu9kw.png",
-    "image": "magnetic_shaker_250902_mf7kbisphp.png",
+    "drawing": "static/module/with_labware/mag`shaker.png",
+    "image": "static/module/without_labware/mag`shaker.png",
     "is_available": true,
     "is_required_adapter": false,
     "key": "magnetic_shaker",
@@ -17,8 +17,8 @@
   },
   {
     "adapter_name": "",
-    "drawing": "19rxn29wele_oca8jht01z.png",
-    "image": "8qwh2kun6j_zvk7qrhokk.jpg",
+    "drawing": "static/module/with_labware/coldplate.svg",
+    "image": "static/module/without_labware/coldplate.jpg",
     "is_available": true,
     "is_required_adapter": false,
     "key": "coldplate",
@@ -32,25 +32,9 @@
     "type": "coldplate"
   },
   {
-    "adapter_name": "",
-    "drawing": "2m7xl3l5v0b_exlq7ftsv2.png",
-    "image": "inheco_odtc_qtkznuoweb.png",
-    "is_available": true,
-    "is_required_adapter": false,
-    "key": "odtc",
-    "order_id": 4,
-    "product_name": "ODTC",
-    "spec": {
-      "offset_x": -5.5,
-      "offset_y": 10,
-      "offset_z": 93.5
-    },
-    "type": "odtc"
-  },
-  {
     "adapter_name": "96 V-bottom",
-    "drawing": "0ruyercokfj_5p5ma20994.6wellV-bottom_31.png",
-    "image": "chat_gpt_image_2025_12_11_05_11_18_5dq422m4k1.png",
+    "drawing": "static/module/with_labware/coldplate.svg",
+    "image": "static/module/without_labware/coldplate.jpg",
     "is_available": true,
     "is_required_adapter": true,
     "key": "coldplate_96V-bottom",
@@ -65,8 +49,24 @@
   },
   {
     "adapter_name": "",
-    "drawing": "shaker_deck_lcsq5nx4w3.jpg",
-    "image": "shaker_render_a748fkw4gz.png",
+    "drawing": "static/module/with_labware/odtc.svg",
+    "image": "static/module/without_labware/odtc.png",
+    "is_available": true,
+    "is_required_adapter": false,
+    "key": "odtc",
+    "order_id": 4,
+    "product_name": "ODTC",
+    "spec": {
+      "offset_x": -5.5,
+      "offset_y": 10,
+      "offset_z": 93.5
+    },
+    "type": "odtc"
+  },
+  {
+    "adapter_name": "",
+    "drawing": "static/module/with_labware/shaker.svg",
+    "image": "static/module/without_labware/shaker.png",
     "is_available": true,
     "is_required_adapter": false,
     "key": "shaker",
