@@ -6187,14 +6187,14 @@
     "well_count": 96
   },
   {
-    "category": "Trash",
+    "category": "Waste",
     "category_number": "",
     "column_count": 12,
     "company": "ABLE Labs",
     "custom_drawing": false,
     "drawing": "static/labware/reservoir/reservoir_row1_col12.svg",
     "image": "",
-    "key": "ablelabs_trash",
+    "key": "ablelabs_waste",
     "product_name": "Waste",
     "row_count": 8,
     "shape_bottom": "Flat",
@@ -6202,7 +6202,7 @@
     "show": true,
     "spec": {
       "company": "ABLE Labs",
-      "product_name": "Trash",
+      "product_name": "Waste",
       "catalog_number": "",
       "well_count": 96,
       "row_count": 8,
