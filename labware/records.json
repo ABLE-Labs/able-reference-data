@@ -6187,6 +6187,76 @@
     "well_count": 96
   },
   {
+    "category": "Tip Box",
+    "category_number": "TIP-20NFB03",
+    "column_count": 12,
+    "company": "ABLE Labs",
+    "custom_drawing": false,
+    "drawing": "static/labware/wellplate/wellplate_96_circle.svg",
+    "image": "",
+    "key": "ablelabs_tip_box_20",
+    "product_name": "20ul Tip Box",
+    "row_count": 8,
+    "shape_bottom": "U",
+    "shape_well": "Circle",
+    "show": true,
+    "spec": {
+      "well_count": 96,
+      "row_count": 8,
+      "column_count": 12,
+      "offset_x": 14.3,
+      "offset_y": 11.25,
+      "space_x": 9,
+      "space_y": 9,
+      "height": 65,
+      "depth": 6,
+      "tip_info": {
+        "volume": 20,
+        "length": 36,
+        "overlap": 11
+      }
+    },
+    "verified_ablelabs": true,
+    "verified_user": false,
+    "web_link": "",
+    "well_count": 96
+  },
+  {
+    "category": "Tip Box",
+    "category_number": "TIP-1000NFB03",
+    "column_count": 12,
+    "company": "ABLE Labs",
+    "custom_drawing": false,
+    "drawing": "static/labware/wellplate/wellplate_96_circle.svg",
+    "image": "",
+    "key": "ablelabs_tip_box_1000",
+    "product_name": "1000ul Tip Box",
+    "row_count": 8,
+    "shape_bottom": "U",
+    "shape_well": "Circle",
+    "show": true,
+    "spec": {
+      "well_count": 96,
+      "row_count": 8,
+      "column_count": 12,
+      "offset_x": 12.3,
+      "offset_y": 11.25,
+      "space_x": 9,
+      "space_y": 9,
+      "height": 100,
+      "depth": 6.5,
+      "tip_info": {
+        "volume": 1000,
+        "length": 96,
+        "overlap": 11
+      }
+    },
+    "verified_ablelabs": true,
+    "verified_user": false,
+    "web_link": "",
+    "well_count": 96
+  },
+  {
     "category": "Waste",
     "category_number": "",
     "column_count": 12,
