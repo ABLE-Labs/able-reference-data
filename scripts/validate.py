@@ -53,14 +53,14 @@ def main() -> None:
     if all_errors:
         print("Validation FAILED:")
         for err in all_errors:
-            print(f"  ✗ {err}")
+            print(f"  x {err}")
         sys.exit(1)
     else:
         total = sum(
-            len(json.loads((ROOT / c / "records.json").read_text()))
+            len(json.loads((ROOT / c / "records.json").read_text(encoding="utf-8")))
             for c in COLLECTIONS
         )
-        print(f"Validation PASSED — {total} records across {len(COLLECTIONS)} collections")
+        print(f"Validation PASSED - {total} records across {len(COLLECTIONS)} collections")
 
 
 if __name__ == "__main__":
