@@ -15,6 +15,12 @@ able-reference-data/
 ├── liquid/
 │   ├── schema.json
 │   └── records.json
+├── pipettes/
+│   ├── schema.json
+│   └── records.json     # 공개 가능 값만 (보정값 제외)
+├── aliases/
+│   ├── schema.json
+│   └── records.json     # 참조 키 ↔ 장비(Neon) 코드 ↔ 제품코드 (validate.py 미검사)
 ├── scripts/
 │   └── validate.py      # 유효성 검사
 └── CHANGELOG.md

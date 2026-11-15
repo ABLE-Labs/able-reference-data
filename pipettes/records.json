@@ -101,5 +101,77 @@
         }
       }
     }
+  },
+  {
+    "key": "8ch_1000ul",
+    "label": "8ch 1000uL",
+    "spec": {
+      "channel": 8,
+      "working_volume": 1000.0,
+      "flow_rate": {
+        "default": 736.0,
+        "max": 2000.0
+      }
+    }
+  },
+  {
+    "key": "8ch_200ul",
+    "label": "8ch 200uL",
+    "spec": {
+      "channel": 8,
+      "working_volume": 200.0,
+      "flow_rate": {
+        "default": 100.0,
+        "max": 400.0
+      }
+    }
+  },
+  {
+    "key": "8ch_20ul",
+    "label": "8ch 20uL",
+    "spec": {
+      "channel": 8,
+      "working_volume": 20.0,
+      "flow_rate": {
+        "default": 29.0,
+        "max": 40.0
+      }
+    }
+  },
+  {
+    "key": "1ch_1000ul",
+    "label": "1ch 1000uL",
+    "spec": {
+      "channel": 1,
+      "working_volume": 1000.0,
+      "flow_rate": {
+        "default": 736.0,
+        "max": 2000.0
+      }
+    }
+  },
+  {
+    "key": "1ch_200ul",
+    "label": "1ch 200uL",
+    "spec": {
+      "channel": 1,
+      "working_volume": 200.0,
+      "flow_rate": {
+        "default": 142.0,
+        "max": 427.0
+      }
+    }
+  },
+  {
+    "key": "1ch_20ul",
+    "label": "1ch 20uL",
+    "spec": {
+      "channel": 1,
+      "working_volume": 20.0,
+      "flow_rate": {
+        "default": 29.0,
+        "max": 88.0
+      }
+    }
   }
 ]
