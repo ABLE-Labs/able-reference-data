@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Alias",
+  "type": "object",
+  "required": [
+    "kind",
+    "ref_key",
+    "neon_notable",
+    "neon_notable96",
+    "product_code"
+  ],
+  "properties": {
+    "kind": {
+      "type": "string",
+      "enum": [
+        "labware",
+        "pipette",
+        "module",
+        "adapter"
+      ]
+    },
+    "ref_key": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Key in labware/modules/pipettes records; null when this repository has no record"
+    },
+    "neon_notable": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Code in the NOTABLE Neon device library"
+    },
+    "neon_notable96": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Code in the NOTABLE-96 Neon device library"
+    },
+    "product_code": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "ABLE Labs product code (e.g. APP-8P20); null when unknown"
+    },
+    "note": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

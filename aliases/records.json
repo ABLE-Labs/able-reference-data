@@ -1,0 +1,218 @@
+[
+  {
+    "kind": "labware",
+    "ref_key": "ablelabs_tip_box_200",
+    "neon_notable": "ablelabs_tip_box_200",
+    "neon_notable96": "ablelabs_tip_box_200",
+    "product_code": null,
+    "note": ""
+  },
+  {
+    "kind": "labware",
+    "ref_key": "ablelabs_tip_box_50",
+    "neon_notable": "ablelabs_tip_box_50",
+    "neon_notable96": "ablelabs_tip_box_50",
+    "product_code": null,
+    "note": ""
+  },
+  {
+    "kind": "labware",
+    "ref_key": "ablelabs_tip_box_20",
+    "neon_notable": "ablelabs_tip_box_20",
+    "neon_notable96": null,
+    "product_code": null,
+    "note": "not in the NOTABLE-96 Neon library"
+  },
+  {
+    "kind": "labware",
+    "ref_key": "ablelabs_tip_box_1000",
+    "neon_notable": "ablelabs_tip_box_1000",
+    "neon_notable96": null,
+    "product_code": null,
+    "note": "not in the NOTABLE-96 Neon library"
+  },
+  {
+    "kind": "labware",
+    "ref_key": "ablelabs_waste",
+    "neon_notable": "ablelabs_trash",
+    "neon_notable96": "ablelabs_trash",
+    "product_code": null,
+    "note": "Neon category 'trash', ref category 'Waste'"
+  },
+  {
+    "kind": "labware",
+    "ref_key": "12Well15mL12Channel_NEST_360102",
+    "neon_notable": "nest_12_reservoir_360102",
+    "neon_notable96": "nest_12_reservoir_360102",
+    "product_code": null,
+    "note": ""
+  },
+  {
+    "kind": "labware",
+    "ref_key": "96Well0.2mL_SPL_30096",
+    "neon_notable": "spl_96_well_plate_30096",
+    "neon_notable96": "spl_96_well_plate_30096",
+    "product_code": null,
+    "note": ""
+  },
+  {
+    "kind": "labware",
+    "ref_key": "384Well0.1mL_SPL_38384",
+    "neon_notable": "spl_384_well_plate_38384",
+    "neon_notable96": "spl_384_well_plate_38384",
+    "product_code": null,
+    "note": ""
+  },
+  {
+    "kind": "labware",
+    "ref_key": "qinstruments_20_vial_2016-1074",
+    "neon_notable": "qinstruments_20_vial_2016-1074",
+    "neon_notable96": null,
+    "product_code": null,
+    "note": ""
+  },
+  {
+    "kind": "labware",
+    "ref_key": null,
+    "neon_notable": null,
+    "neon_notable96": "ablelabs_tip_box_300",
+    "product_code": null,
+    "note": "NOTABLE-96 device default library and one site configuration only; product_name says 200ul but tip_info volume is 300; absent in other site configurations and unreleased device software"
+  },
+  {
+    "kind": "labware",
+    "ref_key": "ablelabs_1_reservoir",
+    "neon_notable": null,
+    "neon_notable96": "ablelabs_1_reservoir",
+    "product_code": null,
+    "note": ""
+  },
+  {
+    "kind": "labware",
+    "ref_key": "agen_1_reservoir",
+    "neon_notable": null,
+    "neon_notable96": "agen_1_reservoir",
+    "product_code": null,
+    "note": ""
+  },
+  {
+    "kind": "labware",
+    "ref_key": "bioneer_96_well_plate_90020",
+    "neon_notable": null,
+    "neon_notable96": "bioneer_96_well_plate_90020",
+    "product_code": null,
+    "note": ""
+  },
+  {
+    "kind": "labware",
+    "ref_key": "bioneer_96_pcr_plate_3111-53",
+    "neon_notable": null,
+    "neon_notable96": "bioneer_96_pcr_plate_3111-53",
+    "product_code": null,
+    "note": ""
+  },
+  {
+    "kind": "module",
+    "ref_key": "odtc",
+    "neon_notable": "odtc",
+    "neon_notable96": "odtc",
+    "product_code": null,
+    "note": "NOTABLE-96 code from unreleased NOTABLE-96 device software only"
+  },
+  {
+    "kind": "module",
+    "ref_key": "coldplate",
+    "neon_notable": "coldplate",
+    "neon_notable96": "coldplate",
+    "product_code": null,
+    "note": "NOTABLE-96 code from unreleased NOTABLE-96 device software only"
+  },
+  {
+    "kind": "module",
+    "ref_key": "magnetic_shaker",
+    "neon_notable": "magnetic_shaker",
+    "neon_notable96": "magnetic_shaker",
+    "product_code": null,
+    "note": "NOTABLE-96 code from unreleased NOTABLE-96 device software only"
+  },
+  {
+    "kind": "module",
+    "ref_key": "shaker",
+    "neon_notable": "shaker",
+    "neon_notable96": "shaker",
+    "product_code": null,
+    "note": "NOTABLE-96 code from unreleased NOTABLE-96 device software only"
+  },
+  {
+    "kind": "adapter",
+    "ref_key": "coldplate_96V-bottom",
+    "neon_notable": "coldplate_96well_V-bottom_2016-1201",
+    "neon_notable96": "coldplate_96well_V-bottom_2016-1201",
+    "product_code": null,
+    "note": "ref has one module record for cold plate + 96 V-bottom adapter (offset_z 90); Neon uses module 'coldplate' (offset_z 86.0) plus this adapter (offset_z 5.0); NOTABLE-96 code from unreleased NOTABLE-96 device software only"
+  },
+  {
+    "kind": "adapter",
+    "ref_key": null,
+    "neon_notable": "qinstruments_20x6ml_vial_2016-1074",
+    "neon_notable96": "qinstruments_20x6ml_vial_2016-1074",
+    "product_code": null,
+    "note": "no ref record; NOTABLE-96 code from unreleased NOTABLE-96 device software only"
+  },
+  {
+    "kind": "pipette",
+    "ref_key": "96ch_200ul",
+    "neon_notable": null,
+    "neon_notable96": "96ch_200ul",
+    "product_code": null,
+    "note": "NOTABLE-96 site configurations differ: some use working_volume 300 with tips 300/200/50, others and unreleased device software 200 with tips 200/50 (same as ref)"
+  },
+  {
+    "kind": "pipette",
+    "ref_key": "8ch_1000ul",
+    "neon_notable": "8ch_1000ul",
+    "neon_notable96": null,
+    "product_code": null,
+    "note": ""
+  },
+  {
+    "kind": "pipette",
+    "ref_key": "8ch_200ul",
+    "neon_notable": "8ch_200ul",
+    "neon_notable96": null,
+    "product_code": null,
+    "note": ""
+  },
+  {
+    "kind": "pipette",
+    "ref_key": "8ch_20ul",
+    "neon_notable": "8ch_20ul",
+    "neon_notable96": null,
+    "product_code": null,
+    "note": ""
+  },
+  {
+    "kind": "pipette",
+    "ref_key": "1ch_1000ul",
+    "neon_notable": "1ch_1000ul",
+    "neon_notable96": null,
+    "product_code": null,
+    "note": ""
+  },
+  {
+    "kind": "pipette",
+    "ref_key": "1ch_200ul",
+    "neon_notable": "1ch_200ul",
+    "neon_notable96": null,
+    "product_code": null,
+    "note": ""
+  },
+  {
+    "kind": "pipette",
+    "ref_key": "1ch_20ul",
+    "neon_notable": "1ch_20ul",
+    "neon_notable96": null,
+    "product_code": null,
+    "note": ""
+  }
+]
